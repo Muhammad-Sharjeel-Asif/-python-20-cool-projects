@@ -27,7 +27,9 @@ def get_side_hustles():
         
     except:
         return ("Something went wrong")
-    
+
+st.divider()
+st.subheader("Side Hustles Generator")
 if st.button("Generate Side Hustle"):
     idea = get_side_hustles()
     st.write("Generating side hustle idea...")
@@ -45,6 +47,8 @@ def get_money_quotes():
     except:
         return ("No money quotes available")
 
+st.divider()
+st.subheader("Money Making Quotes Generator")
 if st.button("Generate money making motivations"):
     st.write("Generating money making motivations...")
     time.sleep(2)
